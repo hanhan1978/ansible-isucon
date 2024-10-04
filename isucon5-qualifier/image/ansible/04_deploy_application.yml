@@ -1,8 +1,7 @@
----
 - hosts: imageservers
   gather_facts: no
-  sudo: yes
-  sudo_user: isucon
+  become: yes
+  become_user: isucon
   tasks:
     - git:
         repo=https://github.com/isucon/isucon5-qualify.git
@@ -75,7 +74,7 @@
     # - command: sudo su - isucon /home/isucon/init.sh
 
 - hosts: imageservers
-  sudo: yes
+  become: yes
   gather_facts: no
   tasks:
     - copy: src=../files/env.sh dest=/home/isucon/env.sh owner=isucon mode=644
