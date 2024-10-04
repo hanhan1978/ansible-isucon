@@ -1,5 +1,5 @@
 
-- include: 00_devel.yml
-- include: 01_isucon_base.yml
-- include: 02_xbuild_part.yml
-- include: 06_deploy_bench_tool.yml
+- import_playbook: 00_devel.yml
+- import_playbook: 01_isucon_base.yml
+- import_playbook: 02_xbuild_part.yml
+- import_playbook: 06_deploy_bench_tool.yml
