@@ -39,4 +39,7 @@
           - libbz2-dev
           - curl
           - pkg-config
+          - libsqlite3-dev
+          - libonig-dev
+          - libzip-dev
         state: present
